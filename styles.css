@@ -10,10 +10,10 @@
 /* Navbar */
 header {
   position: sticky;
-  background: rgba(40, 55, 60, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   margin: 10px 10px 0 10px;
   border-radius: 0.5rem;
-  padding: 20px;
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@ header {
 .navbar a {
   font-size: 1.1rem;
   font-weight: 600;
-  color: rgba(40, 55, 60, 1);
+  color: rgb(43, 44, 45);
 }
 
 .navbar a:hover {
@@ -39,4 +39,68 @@ header {
 
 .logo img {
   width: 90px;
+}
+
+.contact {
+  background: #d1512d;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+}
+
+.contact a {
+  color: #ffe6c7;
+  font-weight: 800;
+}
+
+.home {
+  padding: 100px 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-text {
+  /* width: 50%; */
+}
+
+.home-text h1 {
+  padding-bottom: 20px;
+  font-size: 3rem;
+}
+
+.home-text h2 {
+  padding-bottom: 10px;
+}
+
+.home-text p {
+  padding-bottom: 20px;
+}
+
+.home-text .socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+.home-text .socials .socials-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-text .socials .socials-icon i {
+  font-size: 2rem;
+}
+.home-text .socials .resume {
+  background: #d1512d;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+}
+.home-text .socials .resume a {
+  color: #ffe6c7;
+}
+.home-img {
+  display: flex;
+  justify-content: center;
+}
+.home-img img {
+  width: 70%;
 }
