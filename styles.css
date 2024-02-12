@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --main: #ff9b50;
+  --base: #ffbb5c;
+  --dark: #e25e3e;
+  --text: #f6f6f6;
 }
 
 /* Navbar */
@@ -23,33 +32,35 @@ header {
 
 .navbar {
   display: flex;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 .navbar a {
   font-size: 1.1rem;
   font-weight: 600;
   color: rgb(43, 44, 45);
+  padding: 5px 20px;
+  border-radius: 0.2rem;
 }
 
 .navbar a:hover {
-  color: white;
-  background: orange;
+  color: var(--text);
+  background: var(--main);
+  transition: 0.2s all linear;
 }
 
 .logo img {
   width: 90px;
 }
-
-.contact {
-  background: #d1512d;
+.contact a {
+  color: var(--text);
+  font-weight: 600;
+  background: var(--main);
   padding: 10px 20px;
   border-radius: 0.5rem;
 }
-
-.contact a {
-  color: #ffe6c7;
-  font-weight: 800;
+.contact a:hover {
+  background: var(--dark);
 }
 
 .home {
@@ -81,26 +92,32 @@ header {
   gap: 1.5rem;
   align-items: center;
 }
-.home-text .socials .socials-icon {
+.home-text .socials .socials-icon a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 0.5rem;
+  color: black;
+}
+.home-text .socials .socials-icon a:hover {
+  color: var(--dark);
 }
 .home-text .socials .socials-icon i {
   font-size: 2rem;
 }
-.home-text .socials .resume {
-  background: #d1512d;
+.home-text .socials .socials-icon p {
+  font-size: 0.9rem;
+}
+.home-text .socials .resume a {
+  color: var(--text);
+  background: var(--main);
+  font-weight: 500;
   padding: 10px 20px;
   border-radius: 0.5rem;
 }
-.home-text .socials .resume a {
-  color: #ffe6c7;
-}
-.home-img {
-  display: flex;
-  justify-content: center;
+.home-text .socials .resume a:hover {
+  background: var(--dark);
 }
 .home-img img {
-  width: 70%;
+  width: 500px;
 }
