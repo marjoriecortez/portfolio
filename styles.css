@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -120,4 +121,28 @@ header {
 }
 .home-img img {
   width: 500px;
+}
+
+.skills {
+  background: var(--text);
+  padding: 50px 200px;
+}
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.skills .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+.skills-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+.skills-box i {
+  font-size: 3rem;
 }
